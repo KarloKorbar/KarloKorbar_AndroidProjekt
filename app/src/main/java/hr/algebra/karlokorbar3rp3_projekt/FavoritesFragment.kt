@@ -1,0 +1,35 @@
+package hr.algebra.karlokorbar3rp3_projekt
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import hr.algebra.karlokorbar3rp3_projekt.databinding.FragmentItemsBinding
+import hr.algebra.karlokorbar3rp3_projekt.framework.fetchCocktails
+import hr.algebra.karlokorbar3rp3_projekt.model.Cocktail
+
+
+class FavoritesFragment : Fragment() {
+    private lateinit var cocktails: MutableList<Cocktail>
+    private lateinit var binding: FragmentItemsBinding
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        cocktails = requireContext().fetchCocktails()
+        cocktails = cocktails.filter { cocktail -> cocktail.liked }.toMutableList()
+        binding = FragmentItemsBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.rvItems.apply {
+            layoutManager = LinearLayoutManager(requireContext())
+            adapter = CocktailAdapter(requireContext(), cocktails)
+        }
+    }
+}

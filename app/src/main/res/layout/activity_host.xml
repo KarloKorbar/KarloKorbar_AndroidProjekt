@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><!--RelativeLayout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HostActivity">
+
+    <fragment
+        android:id="@+id/navHostFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigationView"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/fragments" />
+
+    <!--
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="@dimen/nvWidth"
+        android:layout_height="@dimen/nvHeight"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:itemIconTint="@drawable/navigation_text_color"
+        app:itemTextColor="@drawable/navigation_text_color"
+        app:menu="@menu/navigation_menu" />
+    -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:itemIconTint="@drawable/navigation_text_color"
+        app:itemTextColor="@drawable/navigation_text_color"
+        app:menu="@menu/navigation_menu" />
+
+
+</RelativeLayout>

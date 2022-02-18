@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">KarloKorbar3RP3_Projekt</string>
+    <string name="please_wait">please wait...</string>
+    <string name="no_internet">cannot connect to internet...</string>
+    <string name="items">Items</string>
+    <string name="about">About</string>
+    <string name="exit">exit</string>
+    <string name="really">are you sure?</string>
+    <string name="cancel">no</string>
+    <string name="confirm">Ok</string>
+    <string name="napravio_karlo_korbar">Napravio Karlo Korbar</string>
+    <string name="delete">Delete</string>
+    <string name="sure">Are you sure you want to delete</string>
+    <string name="name">cocktail name:</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="favorite">Favorite</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/paddingItems">
+
+        <ImageView
+            android:id="@+id/ivItem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ivSplashHeight"
+            tools:src="@drawable/flat_about" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop">
+
+            <TextView
+                android:id="@+id/tvCocktail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/secondaryLightColor"
+                android:textSize="@dimen/textSizeLarge"
+                android:textStyle="bold"
+                tools:text="Cocktail name" />
+
+            <ImageView
+                android:id="@+id/ivRead"
+                android:layout_width="0dp"
+                android:layout_height="30sp"
+                android:layout_gravity="top"
+                android:layout_marginTop="@dimen/maginFlagTop"
+                android:layout_weight="1"
+                tools:src="@drawable/heart_regular" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            android:fontFamily="serif-monospace"
+            android:text="Ingredients:"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="@dimen/textSizeMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@tools:sample/lorem" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            android:fontFamily="serif-monospace"
+            android:text="Instructions:"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="@dimen/textSizeMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@tools:sample/lorem/random" />
+    </LinearLayout>
+
+</ScrollView>

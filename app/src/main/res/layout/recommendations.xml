@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.KarloKorbar3RP3_Projekt.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/paddingItems"
+    android:theme="@style/Theme.KarloKorbar3RP3_Projekt.AppWidgetContainer">
+
+    <ImageView
+        android:id="@+id/wivItem"
+        android:layout_width="@dimen/ivSize"
+        android:layout_height="@dimen/ivSize"
+        tools:src="@drawable/nasa" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ivSize"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/appwidget_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widgetHeight"
+            android:layout_marginLeft="@dimen/marginLeft"
+            android:gravity="top"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/textSizeMedium"
+            tools:text="Cocktail name" />
+
+        <Button
+            android:id="@+id/wbtnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginLeft"
+            android:text="next" />
+    </LinearLayout>
+
+
+</LinearLayout>

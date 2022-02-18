@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ivSplashHeight">400dp</dimen>
+    <dimen name="splashPadding">20dp</dimen>
+    <dimen name="splashTextSize">25sp</dimen>
+    <dimen name="nhWidth">150dp</dimen>
+    <dimen name="nhHeight">100dp</dimen>
+    <dimen name="nhMargin">25dp</dimen>
+    <dimen name="nvWidth">162dp</dimen>
+    <dimen name="nvHeight">240dp</dimen>
+    <dimen name="aboutTestSie">20sp</dimen>
+    <dimen name="paddingItems">10dp</dimen>
+    <dimen name="ivSize">70dp</dimen>
+    <dimen name="textSizeLarge">30sp</dimen>
+    <dimen name="marginLeft">20dp</dimen>
+    <dimen name="cornerRadius">10dp</dimen>
+    <dimen name="marginTop">20dp</dimen>
+    <dimen name="textSizeMedium">20sp</dimen>
+    <dimen name="maginFlagTop">5dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">0dp</dimen>
+    <dimen name="widgetHeight">30dp</dimen>
+</resources>
